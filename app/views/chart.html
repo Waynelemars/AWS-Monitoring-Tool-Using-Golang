@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Monitor</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-sm-12" id="line-chart" ng-controller="ChartCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">CPU Utilization Chart</div>
+            <div class="panel-body">
+                <canvas id="line" class="chart chart-line chart-xl" data="line.data" labels="line.labels" legend="true"
+                click="line.onClick" series="line.series"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="nInCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Network Input Chart</div>
+            <div class="panel-body">
+                <canvas id="bar" class="chart chart-bar" data="bar.data" labels="bar.labels" series="bar.series"
+                options="bar.options"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+	<div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="nOutCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Network Output Chart</div>
+            <div class="panel-body">
+                <canvas id="bar" class="chart chart-bar" data="bar.data" labels="bar.labels" series="bar.series"
+                options="bar.options"></canvas>
+            </div>
+        </div>
+    </div>
+	<div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="memoryController">
+        <div class="panel panel-default">
+            <div class="panel-heading">Memory Chart</div>
+            <div class="panel-body">
+                <canvas id="bar" class="chart chart-bar" data="bar.data" labels="bar.labels" series="bar.series"
+                options="bar.options"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">	
+	<div class="col-lg-6 col-sm-12" id="line-chart" ng-controller="diskRCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Disk Read</div>
+            <div class="panel-body">
+                <canvas id="line" class="chart chart-line chart-xl" data="line.data" labels="line.labels" legend="true"
+                click="line.onClick" series="line.series"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
